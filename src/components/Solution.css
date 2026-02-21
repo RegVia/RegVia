@@ -1,0 +1,125 @@
+.solution {
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.solution::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+}
+
+.solution-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.solution-header .section-subtitle {
+    margin: 0 auto;
+}
+
+.solution-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.solution-card {
+    padding: 44px 36px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition);
+    border-left: 3px solid transparent;
+}
+
+.solution-card:nth-child(1) {
+    border-left-color: var(--blue);
+}
+
+.solution-card:nth-child(2) {
+    border-left-color: var(--green);
+}
+
+.solution-card:nth-child(3) {
+    border-left-color: var(--green);
+}
+
+.solution-card:nth-child(4) {
+    border-left-color: var(--blue);
+}
+
+.solution-card:hover {
+    transform: translateY(-4px);
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.solution-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    margin-bottom: 22px;
+}
+
+.solution-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.solution-icon--blue {
+    background: rgba(28, 126, 214, 0.1);
+    color: var(--blue-light);
+}
+
+.solution-icon--green {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--green-light);
+}
+
+.solution-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.solution-card p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+}
+
+.solution-stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.solution-stat--green {
+    background: rgba(46, 204, 113, 0.1);
+    color: var(--green-light);
+}
+
+.solution-stat--blue {
+    background: rgba(28, 126, 214, 0.1);
+    color: var(--blue-light);
+}
+
+@media (max-width: 768px) {
+    .solution-cards {
+        grid-template-columns: 1fr;
+    }
+}

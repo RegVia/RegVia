@@ -1,0 +1,89 @@
+.contact {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--glass-border), transparent);
+}
+
+.contact-inner {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-inner .section-subtitle {
+    margin: 0 auto 44px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    font-family: var(--font);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all var(--transition);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    transform: translateY(-3px);
+    background: var(--bg-card-hover);
+    border-color: var(--blue);
+    box-shadow: 0 4px 20px rgba(28, 126, 214, 0.15);
+}
+
+.contact-link svg {
+    width: 20px;
+    height: 20px;
+    color: var(--blue-light);
+    flex-shrink: 0;
+}
+
+.contact-link--linkedin:hover {
+    border-color: #0a66c2;
+    box-shadow: 0 4px 20px rgba(10, 102, 194, 0.15);
+}
+
+.contact-link--linkedin svg {
+    color: #4dabf7;
+}
+
+/* Footer */
+.footer {
+    padding: 28px 0;
+    text-align: center;
+    border-top: 1px solid var(--glass-border);
+    background: var(--bg-primary);
+}
+
+.footer p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.footer strong {
+    font-weight: 600;
+    color: var(--blue-light);
+}
