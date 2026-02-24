@@ -10,10 +10,10 @@
 
 .navbar.scrolled {
     padding: 4px 0;
-    background: rgba(10, 15, 20, 0.9);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
 }
 
 .navbar .container {
@@ -31,7 +31,6 @@
     height: 72px;
     width: auto;
     object-fit: contain;
-    filter: brightness(1.6);
 }
 
 .navbar-links {
@@ -53,7 +52,7 @@
 }
 
 .navbar-cta {
-    font-family: var(--font);
+    font-family: var(--font-heading);
     font-size: 0.85rem;
     font-weight: 600;
     padding: 10px 24px;
@@ -67,7 +66,7 @@
 
 .navbar-cta:hover {
     background: var(--blue-dark);
-    box-shadow: 0 4px 16px rgba(28, 126, 214, 0.3);
+    box-shadow: 0 4px 16px rgba(28, 126, 214, 0.25);
     transform: translateY(-1px);
 }
 

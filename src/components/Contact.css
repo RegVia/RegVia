@@ -45,29 +45,28 @@
     cursor: pointer;
     transition: all var(--transition);
     text-decoration: none;
+    box-shadow: var(--shadow-sm);
 }
 
 .contact-link:hover {
     transform: translateY(-3px);
-    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-md);
     border-color: var(--blue);
-    box-shadow: 0 4px 20px rgba(28, 126, 214, 0.15);
 }
 
 .contact-link svg {
     width: 20px;
     height: 20px;
-    color: var(--blue-light);
+    color: var(--blue);
     flex-shrink: 0;
 }
 
 .contact-link--linkedin:hover {
     border-color: #0a66c2;
-    box-shadow: 0 4px 20px rgba(10, 102, 194, 0.15);
 }
 
 .contact-link--linkedin svg {
-    color: #4dabf7;
+    color: #0a66c2;
 }
 
 /* Footer */
@@ -85,5 +84,5 @@
 
 .footer strong {
     font-weight: 600;
-    color: var(--blue-light);
+    color: var(--blue);
 }

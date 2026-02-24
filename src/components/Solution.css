@@ -35,6 +35,7 @@
     border-radius: var(--radius-lg);
     transition: all var(--transition);
     border-left: 3px solid transparent;
+    box-shadow: var(--shadow-sm);
 }
 
 .solution-card:nth-child(1) {
@@ -54,9 +55,8 @@
 }
 
 .solution-card:hover {
-    transform: translateY(-4px);
-    background: var(--bg-card-hover);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
 }
 
 .solution-icon {
@@ -75,16 +75,17 @@
 }
 
 .solution-icon--blue {
-    background: rgba(28, 126, 214, 0.1);
-    color: var(--blue-light);
+    background: rgba(28, 126, 214, 0.08);
+    color: var(--blue);
 }
 
 .solution-icon--green {
-    background: rgba(46, 204, 113, 0.1);
-    color: var(--green-light);
+    background: rgba(46, 204, 113, 0.08);
+    color: var(--green);
 }
 
 .solution-card h3 {
+    font-family: var(--font-heading);
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 12px;
@@ -109,13 +110,13 @@
 }
 
 .solution-stat--green {
-    background: rgba(46, 204, 113, 0.1);
-    color: var(--green-light);
+    background: rgba(46, 204, 113, 0.08);
+    color: var(--green);
 }
 
 .solution-stat--blue {
-    background: rgba(28, 126, 214, 0.1);
-    color: var(--blue-light);
+    background: rgba(28, 126, 214, 0.08);
+    color: var(--blue);
 }
 
 @media (max-width: 768px) {

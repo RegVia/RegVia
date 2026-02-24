@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap');
 
 :root {
-  /* Dark theme with blue-green gradients */
-  --bg-primary: #0a0f14;
-  --bg-secondary: #0e1520;
-  --bg-card: rgba(255, 255, 255, 0.04);
-  --bg-card-hover: rgba(255, 255, 255, 0.07);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  /* Light theme — clean white */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f8fa;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f9fafb;
+  --glass-border: rgba(0, 0, 0, 0.08);
 
-  --text-primary: #eef2f7;
-  --text-secondary: #8094a8;
-  --text-muted: #4a5e72;
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #999999;
 
-  /* Brand colors from logo */
+  /* Brand colors */
   --blue: #1c7ed6;
   --blue-light: #4dabf7;
   --blue-dark: #1264a3;
@@ -20,13 +20,18 @@
   --green-light: #2ecc71;
   --green-dark: #1e8c4c;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+  /* Accent for AI feel */
+  --accent-purple: #7c3aed;
+  --accent-indigo: #4f46e5;
+
+  /* Shadows — light theme */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1);
 
   /* Typography */
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Spacing */
   --section-padding: 110px 0;
@@ -74,7 +79,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary);
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -94,17 +99,19 @@ body {
 }
 
 .section-label {
-  font-size: 1.05rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 2.5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--green-light);
+  color: var(--blue);
   margin-bottom: 16px;
 }
 
 .section-title {
+  font-family: var(--font-heading);
   font-size: 3.2rem;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   margin-bottom: 18px;
   color: var(--text-primary);
@@ -112,7 +119,7 @@ body {
 }
 
 .section-title span {
-  background: linear-gradient(135deg, var(--blue-light), var(--green-light));
+  background: linear-gradient(135deg, var(--blue), var(--accent-purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
